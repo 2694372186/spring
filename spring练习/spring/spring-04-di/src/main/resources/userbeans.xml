@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.spring.dao.User" p:name="樊磊" p:age="20"/>
+
+    <bean id="user2" class="com.spring.dao.User" c:age="21" c:name="樊磊"/>
+
+    <bean id="user3" class="com.spring.dao.User" scope="singleton"/>
+</beans>
